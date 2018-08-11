@@ -70,4 +70,5 @@ curl -i  -H "Content-Type: application/json" -X DELETE http://localhost:61492/Ap
 
 curl -i  -H "Content-Type: application/json" -X DELETE http://localhost:61492/Api/ShoppingCart/DeleteAllBasketItems
 
+#Ecommerce.Web (Asp.net web application core)
 
