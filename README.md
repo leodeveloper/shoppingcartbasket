@@ -80,9 +80,15 @@ there are three pages
 
    http://localhost:58458/Product display list of product
    
+   Screen shot 
+   ![alt text](https://github.com/leodeveloper/shoppingcartbasket/blob/master/Product.PNG)
+   
 2. Product detail page
 
    http://localhost:58458/Product/ProductDetail?productId=2 display the product detail and also add this product in to basket
+   
+   Screen shot 
+   ![alt text](https://github.com/leodeveloper/shoppingcartbasket/blob/master/ProductDetailPage.PNG)
    
 3. Basket page 
 
