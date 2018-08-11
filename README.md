@@ -40,7 +40,7 @@ Under Configuration method, For in memory storage using Microsoft.EntityFramewor
 
 EF Core database providers do not have to be relational databases. InMemory is designed to be a general purpose database for testing, and is not designed to mimic a relational database.
 
-# services.AddDbContext<EnityFramWorkDbContext>(opt => opt.UseInMemoryDatabase("TestDb"));
+services.AddDbContext<EnityFramWorkDbContext>(opt => opt.UseInMemoryDatabase("TestDb"));
       
 Switch from in memory database to actuall database by change the single line of code.
 
