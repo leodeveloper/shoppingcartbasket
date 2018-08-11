@@ -24,19 +24,18 @@ Settings
 
 Ecommerce.WebApi Under Properties there is file called launchsettings.json
 
- Default Url    "launchUrl": "api/product/",
+Index api    "launchUrl": "api/product/",
  
- Enviroment     "environmentVariables": {"ASPNETCORE_ENVIRONMENT": "Development"},
+Enviroment     "environmentVariables": {"ASPNETCORE_ENVIRONMENT": "Development"},
  
- Api Url        "applicationUrl": "http://localhost:61493"
+Base Api Url        "applicationUrl": "http://localhost:61493"
  
  
-Ecommerce.WebApi the is file called startup.cs
+Ecommerce.WebApi 
 
-Database Settings
+Database Settings is in the startup.cs
 
 Under Configuration method, For in memory storage using Microsoft.EntityFrameworkCore.InMemory 
-
 
 EF Core database providers do not have to be relational databases. InMemory is designed to be a general purpose database for testing, and is not designed to mimic a relational database.
 
@@ -52,4 +51,21 @@ you can change the default route in startup.cs
 
 # Swegger
 Swagger is also configure in this web api project, the url for swagger is http://localhost:61492/swagger
+
+# Curl 
+
+Curl command for api end points 
+
+curl -i -H "Content-Type: application/json" http://localhost:61492/api/Shoppingcart/GetBasketItems
+
+curl -i -H "Content-Type: application/json" http://localhost:61492/api/Product
+
+curl -i -H "Content-Type: application/json" -X POST -d "{'ProductId':1,'Product':null,'Quantity':4} " http://localhost:61492/Api/ShoppingCart/
+
+curl -i  -H "Content-Type: application/json" -X PUT -d "{'productid':1, 'quantity'=6}" http://localhost:61492/Api/ShoppingCart/ChangeItemQuantity/1/6
+
+curl -i  -H "Content-Type: application/json" -X DELETE http://localhost:61492/Api/ShoppingCart/DeleteItemFromBasket/1
+
+curl -i  -H "Content-Type: application/json" -X DELETE http://localhost:61492/Api/ShoppingCart/ClearBasket
+
 
