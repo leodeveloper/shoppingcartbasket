@@ -84,8 +84,10 @@ there are three pages
 
    http://localhost:58458/Product/ProductDetail?productId=2 display the product detail and also add this product in to basket
    
-3. Basket page
+3. Basket page 
 
-   http://localhost:58458/Basket display the list of item in the basket also change the quantity of the basket item and remove the items    from the basket
+   http://localhost:58458/Basket display the list of item in the basket also change the quantity of the basket item and remove the items    from the basket.
    
+   Screen shot 
+   https://github.com/leodeveloper/shoppingcartbasket/blob/master/Baket.PNG
 
