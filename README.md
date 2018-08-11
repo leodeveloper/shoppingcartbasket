@@ -56,9 +56,11 @@ Swagger is also configure in this web api project, the url for swagger is http:/
 
 Curl command for api end points 
 
-curl -i -H "Content-Type: application/json" http://localhost:61492/api/Shoppingcart/GetBasketItems
+curl -i -H "Content-Type: application/json" http://localhost:61492/api/Product/ProductDetail?productId=1
 
 curl -i -H "Content-Type: application/json" http://localhost:61492/api/Product
+
+curl -i -H "Content-Type: application/json" http://localhost:61492/api/Shoppingcart/GetBasketItems
 
 curl -i -H "Content-Type: application/json" -X POST -d "{'ProductId':1,'Product':null,'Quantity':4} " http://localhost:61492/Api/ShoppingCart/
 
@@ -66,6 +68,6 @@ curl -i  -H "Content-Type: application/json" -X PUT -d "{'productid':1, 'quantit
 
 curl -i  -H "Content-Type: application/json" -X DELETE http://localhost:61492/Api/ShoppingCart/DeleteItemFromBasket/1
 
-curl -i  -H "Content-Type: application/json" -X DELETE http://localhost:61492/Api/ShoppingCart/ClearBasket
+curl -i  -H "Content-Type: application/json" -X DELETE http://localhost:61492/Api/ShoppingCart/DeleteAllBasketItems
 
 
