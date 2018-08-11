@@ -72,3 +72,20 @@ curl -i  -H "Content-Type: application/json" -X DELETE http://localhost:61492/Ap
 
 # Ecommerce.Web (Asp.net web application core)
 
+Front end client application for using the end point of Eccomerce.WebApi
+
+there are three pages
+
+1. Product page 
+
+   http://localhost:58458/Product display list of product
+   
+2. Product detail page
+
+   http://localhost:58458/Product/ProductDetail?productId=2 display the product detail and also add this product in to basket
+   
+3. Basket page
+
+   http://localhost:58458/Basket display the list of item in the basket also change the quantity of the basket item and remove the items    from the basket
+   
+
