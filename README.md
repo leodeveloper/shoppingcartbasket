@@ -68,7 +68,7 @@ curl -i  -H "Content-Type: application/json" -X PUT -d "{'productid':1, 'quantit
 
 curl -i  -H "Content-Type: application/json" -X DELETE http://localhost:61492/Api/ShoppingCart/DeleteItemFromBasket/1
 
-curl -i  -H "Content-Type: application/json" -X DELETE http://localhost:61492/Api/ShoppingCart/DeleteAllBasketItems
+curl -i  -H "Content-Type: application/json" -X DELETE http://localhost:61492/Api/ShoppingCart/ClearBasket/1
 
 # Ecommerce.Web (Asp.net web application core)
 
